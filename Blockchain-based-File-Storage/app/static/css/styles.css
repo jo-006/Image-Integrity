@@ -1,0 +1,142 @@
+ /* Custom CSS for Blockchain File Storage */
+
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #222;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --border-radius: 8px;
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-color);
+  padding: 15px;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background: #388E3C;
+  border-radius: var(--border-radius);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.upload-section, .files-section {
+  background: white;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background: #388E3C;
+}
+
+.file-card {
+  background: rgb(131, 251, 245);
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #7f8c8d;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+}
+
+.file-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f00;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.file-actions .download-link {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer {
+  background: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
